@@ -1,0 +1,48 @@
+\section{Background}
+We would like to convey our sincere gratitude to Rakete 7 for letting us use their infrastructure for our mobility study.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale =0.1]{./images/rakete1.png} 
+\end{figure} 
+Following is the list of hardware and software inventories that has been used so far.
+
+\begin{itemize}
+	\item \texttt{Rakete7 BLE Beacons\cite{Rakete7}}
+	\par We have used the EddyStone compliant Bluetooth Low Energy Beacons provided by Rakete 7. Eddystone is a protocol specification that defines a Bluetooth low energy (BLE) message format for proximity beacon messages. It describes several different frame types such as UID(Unique Beacon ID), URL (Uniform Resource Locator), TLM (Beacon Telemetry Information) and EID (Encrypted Ephemeral Identifier) that may be used individually or in combinations to create beacons that can be used for a variety of applications. The useful frame type for us however is the URL.
+	
+	\item \texttt{Rakete7 Substance\cite{Rakete7Substance}}
+	\par While we are building a customized Content Management System of our own, for the initial phase of deployment we have used Rakete 7 Substance as Content Management and Analytics platform for the beacon deployment. Substance is an integrated platform that can be used to seamlessly create content and publish using particular beacon of our choice. That way it enabled us to create and publish location specific content at once or at later schedule. It also provides an analytics for the beacon detection and interactions events.
+	
+	\item \texttt{Java EE Specification\cite{JavaEE}}
+	\par Java EE specification is the standard for the community driven enterprise softwares. It provides an API and runtime environment for developing and running large-scale, multi-tiered, scalable, reliable and secure network applications. Java EE web profile comprises of many components. Some of them used here are
+		\subitem{-} \texttt{Java API for RESTful Web Services (JAX-RS)}  : Helps in creating web services according to the Representational State Transfer (REST)  architectural paradigm.
+		
+		\subitem{-} \texttt{Enterprise Java Beans (EJB)} : A server side software component that encapsulates the business logic and helps is modular constructions of the enterprise softwares.
+		
+		\subitem{-} \texttt{Java Persistence API} : Specification that helps in managing the data into relational database with object relational mapping using POJO Entities and Relationships.
+		
+	\item \texttt{Glassfish Application Server\cite{Glassfish}}
+	\par Glassfish application server is an open source flexible, lightweight and production ready reference implementation of the Java EE platform and supports all the Java EE specifications. It supports interoperability among all the Java EE components and offers Servlet Container EJB Container to name the few.
+	
+	\item  \texttt{Gradle\cite{Gradle}}
+	\par Open source build and automation system based on the Groovy domain specific language. Gradle offers rich built in functionalities packaged inside plugins for a wide range of programming languages. It can scale out the development with fast builds and automates the tasks that should be performed before during and after the execution of the project, starting from the compilation to the deployment.
+	
+	\item \texttt{Docker\cite{Docker}}
+	\par One of the leading software container platforms created based on Linux Container Technology. It simplifies collaborations in development and makes projects portable. It is one of the first choices if not the first choice when it comes to Continuous Integration / Continuous Delivery paradigm in modern software development. Enterprises use Docker to build agile software delivery pipelines to ship new features faster. In our mobility study it serves the feature of portability. 
+	
+	\item \texttt{PHP\cite{PHP}}
+	\par PHP(Recursive acronym of: Hypertext Preprocessor) is an open source scripting language well suited for web development. In stead of verbose HTML command only, we can embed PHP code inside HTML codes which serves a special purpose. Using PHP we can encapsulate the server-side logic and create necessary abstraction for the client. This distinguishes PHP from client side scripting languages like JavaScript. 
+	
+	\item \texttt{CodeIgniter\cite{CodeIgniter}}
+	\par Codeigniter is a powerful Php framework for developing web application . The framework follow the model of MVC Model, View and Controller. As a result of that all the code for the web application is separately handled. Model will have all the code related to the Database and this will include the sql code. Where as View contain all the files related to front end. View consist of the code written in Html/ CSS and javascript. All the pages made will be in the View folder. Controller act as a connector between the View and Model. Controller will have all the functions of handling the requests from the front end and communicating with Model for CRUD function.
+	
+	\item \texttt{MySQL and PostgreSQL\cite{MySQL}\cite{PostgreSQL}}
+	\par Two of the most popular open source relational database frameworks used in our mobility study. We have used PostgreSQL for persisting the detection related dataset from the beacons and used SQL to generate unique detection related analytics and result set. MySQL on the other hand, is used in our content management system  in order to persist the responses from the survey questionnaire.
+	
+	\item \texttt{NetLogo}
+	NetLogo \cite{NetLogoHome} is an open-source simulation software where social and natural phenomena can be modeled. It comes with an own functional programming language extended from Logo and a graphic user interface that allows easy developing of simulations on a 2D spatial view \cite{NetlogoDocu}.
+	NetLogo is based on agent-based modeling. Agents (e.g. people or animals) act after a certain set of rules and when the simulation runs the interactions and the behavior of the agents can be observed. The advantage of agent-based modeling is that very complex interactions can be simulated easily, non-linear interactions can be explored, different agent types with different rules and variables can be included and agents can modify the network dynamically \cite{berryman2010tutorials}. 
+	\par A simulation can always only be as good as the input that it gets. The output is according to the input of the data and the rules. Only if they are accurate enough a simulation can give valid results. Participatory actors can be included to provide input data and give qualitative feedback on the model and the output results \cite{berryman2010tutorials}.
+	\par Of course a model is always a model and therefore does not show the reality in 100 percent accuracy. There is always a tension between accuracy and simplicity because not every single factor can or should be included. A model should always strive to be as simple as possible and reduced to the important variables, yet include as many factors that are needed to be accurate enough \cite{carley2002simulating}.
+	
+\end{itemize}

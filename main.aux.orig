@@ -1,0 +1,114 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\bibstyle{ieeetr}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Motivation for student mobility}}{1}{figure.1}}
+\newlabel{figure1:introduction_motivaton_mobility}{{1}{1}{Motivation for student mobility}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Motivation}{2}{subsection.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Physical Web}}{2}{figure.2}}
+\newlabel{figure1:introduction_physical_web}{{2}{2}{Physical Web}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Terms and Concepts}{3}{subsection.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Goal Definition}{4}{subsection.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Works}{4}{section.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Real-world Applications}{4}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Related Scientific Articles}{6}{subsection.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Caveat}{7}{subsection.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Background}{7}{section.3}}
+\citation{NetLogoHome}
+\citation{NetlogoDocu}
+\citation{berryman2010tutorials}
+\citation{berryman2010tutorials}
+\citation{carley2002simulating}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Approach}{10}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Survey Questionnaire Preparation}{10}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Beacon Configuration Deployment}{10}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Unique Detections Form Beacons}{10}{subsection.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces All Detection Events Recorded}}{13}{figure.3}}
+\newlabel{figure1:all_detection_events_recorded}{{3}{13}{All Detection Events Recorded}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Unique Detections At Feki Campus Cafeteria}}{14}{figure.4}}
+\newlabel{figure1:unique_detections_at_feki_campus_mensa}{{4}{14}{Unique Detections At Feki Campus Cafeteria}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Mobility Pattern For a Given User}}{15}{figure.5}}
+\newlabel{figure1:mobility_pattern_for_given_user}{{5}{15}{Mobility Pattern For a Given User}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Possibilities With MAC Address}{16}{subsection.4.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces MAC Address}}{17}{figure.6}}
+\newlabel{figure1:mac_address_reference}{{6}{17}{MAC Address}{figure.6}{}}
+\citation{venzke2014standortlokalisierung}
+\citation{beaconPrognose}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces MAC Vendor API Usage}}{18}{figure.7}}
+\newlabel{figure1:mac_vendor_api_usage}{{7}{18}{MAC Vendor API Usage}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Custom Content Management}{18}{subsection.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Student Mobility Simulation }{18}{subsection.4.6}}
+\citation{googleNearby}
+\citation{physicalWebApp}
+\@writefile{toc}{\contentsline {paragraph}{Data Collection}{19}{section*.4}}
+\citation{iosVsAndroid}
+\citation{androidPlatformVersions}
+\citation{androidHistorical}
+\citation{bluetoothUsage}
+<<<<<<< HEAD
+\@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation}{21}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Simulation Results}{21}{subsection.5.1}}
+\@writefile{toc}{\contentsline {paragraph}{Current Scenario}{21}{section*.5}}
+\@writefile{toc}{\contentsline {paragraph}{Future Average Case Scenario}{22}{section*.6}}
+\@writefile{toc}{\contentsline {paragraph}{Future Best Case Scenario}{22}{section*.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Summary}{22}{section.6}}
+\bibdata{literature/bib}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work}{23}{section.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}References}{23}{section.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Appendix}{23}{section.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Individual Project Report for Alexandra Kapp}{23}{subsection.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Individual Project Report for Alexander Albert}{23}{subsection.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Individual Project Report for Chandan Sarkar}{23}{subsection.9.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Individual Project Report for Usama Ahmed}{23}{subsection.9.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Individual Project Report for Shubhang Sharma}{23}{subsection.9.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.6}Individual Project Report for Mansoor Muzaffar Hussain}{23}{subsection.9.6}}
+=======
+\@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation}{19}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Simulation Results}{19}{subsection.5.1}}
+\@writefile{toc}{\contentsline {paragraph}{Current Scenario}{19}{section*.5}}
+\@writefile{toc}{\contentsline {paragraph}{Future Average Case Scenario}{20}{section*.6}}
+\@writefile{toc}{\contentsline {paragraph}{Future Best Case Scenario}{20}{section*.7}}
+\bibdata{literature/bib}
+\bibcite{NetLogoHome}{1}
+\bibcite{NetlogoDocu}{2}
+\bibcite{berryman2010tutorials}{3}
+\bibcite{carley2002simulating}{4}
+\bibcite{venzke2014standortlokalisierung}{5}
+\bibcite{beaconPrognose}{6}
+\bibcite{googleNearby}{7}
+\bibcite{physicalWebApp}{8}
+\bibcite{iosVsAndroid}{9}
+\bibcite{androidPlatformVersions}{10}
+\bibcite{androidHistorical}{11}
+\bibcite{bluetoothUsage}{12}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Summary}{21}{section.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work}{21}{section.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}References}{21}{section.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Appendix}{22}{section.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Individual Project Report for Alexandra Kapp}{22}{subsection.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Individual Project Report for Alexander Albert}{22}{subsection.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Individual Project Report for Chandan Sarkar}{24}{subsection.9.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Individual Project Report for Usama Ahmed}{24}{subsection.9.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Individual Project Report for Shubhang Sharma}{24}{subsection.9.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.6}Individual Project Report for Mansoor Muzaffar Hussain}{24}{subsection.9.6}}
+>>>>>>> a63dcecdf8cb9cb7441e1d5d9169387018f37b7a

@@ -1,0 +1,35 @@
+\subsection{Beacon Configuration And  Deployment}
+
+After the questionnaire was implemented, our next job was to put the survey online. Here is the right place to introduce the Rakete 7 Substance as a platform for configuring the Physical Web beacons with the content URL they are supposed to emit. In our case, Eddystone\cite{EddyStone} compliant BLE beacons are capable to emit the URL of any content page. Hence, we designed the survey pages separately and tried to link the page with one of the POI(s) in Substance.
+\par While deploying the survey page from Substance\cite{Rakete7Substance} directly in this way, we encountered our first challenge. We created the survey page and initially hosted from our private web server with an HTTP URL. However, for Physical Web Google  recommends HTTPS, the more secure connection powered by SSL. Therefore, as a general guideline as well as the Rakete7 Substance usage policy we had to come up with an work around for using HTTPS instead.
+\par We created a landing page using the content creation feature offered by Rakete 7\cite{Rakete7} and added button which redirects to our survey page. Thus our landing page created using Substance has an HTTPS URL that redirects to the actual survey page having an HTTP URL hosted from our private web server.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \linewidth]{./images/landing_page}
+	\caption{Survey Landing Page}
+	\label{figure1:survey_landing_page}
+\end{figure}
+\par Post resolution to the afore mentioned challenge, we pointed the landing/welcome page  to one of the available POI(s) and enabled all our beacons to broadcast the content of the same POI. That way we enabled the beacons which are to be installed in four designated university campus locations to emit the same survey content. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \linewidth]{./images/survey_poi_configuration}
+	\caption{Configuring beacons to emit the URL of Survey}
+	\label{figure1:configuring_beacons_with_survey}
+\end{figure}
+
+We have conducted this beacon deployment and data collection in two phases. Our refined goal is to evaluate Physical Web as viable approach for mobility study. Hence it is crucial to understand if students at all can interact with the beacons without and with a prior knowledge about their existence in the proximity.
+
+In order to conduct these experiments in the first phase which lasted about a week just after the deployment, we did not send any notifications to the students. We have monitored the interaction pattern from the Rakete 7 Substance\cite{Rakete7Substance} analytics.
+After a week of Phase I we have posted a notification in the notice board of the designated locations where we have deployed the beacons.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.4]{./images/survey_notice}
+	\caption{Notice posted in the designated locations about the deployed beacons in proximity}
+	\label{figure1:survey_notice_beacons_deployed}
+\end{figure}
+
+Upon doing this, we expected a significant growth in beacon interaction during second phase compared to first phase. However in reality, we did not notice a promising growth. We used to monitor the detection events with beacons via the Rakete 7 Substance\cite{Rakete7Substance} analytics module and interactions and responses on the survey questionnaire from the custom content management system that we built. We will discuss on that in later section of this document.
+
+At this point of our study, we had the detection related dataset available with us from Rakete 7\cite{Rakete7}. Our job was to analyze the dataset and figure out how reliable Physical Web is to use for mobility studies. We are going to discuss the dataset and our analysis on the same in the upcoming section.

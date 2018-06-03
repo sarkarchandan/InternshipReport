@@ -1,0 +1,33 @@
+\subsection{Possibilities With MAC Address}
+
+\textbf{What is a MAC address\cite{MACAddress}?}
+
+A MAC address is an identifier given to network adapter when it is manufactured. It is baked in to the Network Interface Card of the hardware and unique to it. MAC address has some crucial real world uses such as in the functionality of the Address Resolution Protocol (ARP) which translates an IP address into the corresponding MAC address. This enables the transport of data from an IP address to a actual piece of hardware. Just like the hardware and software works together in any computing system, MAC address and IP address work together. Since it is unique and static to the hardware MAC address is sometimes also called burned in address or physical address.
+
+MAC address is 48bit identifier which makes the address space of size 2ˆ48 referring to this insane number: 281,474,976,710,656. It is usually expressed as 12 hexadecimal digits separate by colon or hyphen. First 6 digits corresponds to a unique identifier for the hardware vendor and known as Organizationally Unique Identifier\cite{OUI}, usually administered by IEEE. Last 6 digits are administered by network card manufacturers and they correspond to the network card  interface serial number.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \linewidth]{./images/mac_parts}
+	\caption{MAC Address}
+	\label{figure1:mac_address_reference}
+\end{figure}
+
+\textbf{How things were planned...}
+
+Assuming that we can access the MAC address of the devices where the BLE Beacons are detected, we thought that it could be viable option to have an idea on the different device types we are dealing with. That in turn would contribute to evaluate the feasibility of using Physical Web and BLE Beacons for mobility study.
+
+The whole idea depended on retrieving the vendor specific information from the MAC address. We have studied and discovered a number of useful Api(s) which can parse the MAC address and expose the vendor specific information. One such Api we came across is the free Api offered by MAC Vendors\cite{MACVendorsApi} [\url{https://macvendors.com}] where we could send a curl request passing the MAC address as the parameter and get the vendor information back.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.5]{./images/mac_vendor_api}
+	\caption{MAC Vendor API Usage}
+	\label{figure1:mac_vendor_api_usage}
+\end{figure}
+
+\textbf{Observation and Outcome}
+
+As it turned out that we can not access the MAC Address of the detected devices from the data set from Rakete 7 Substance, because of the user privacy related restrictions and best practices. So we could not follow this approach. However, on our Simulation section we have included the availability of MAC addresses as a parameter and tried to determine how it would have impacted the mobility study.
+
+Having the possibilities with the MAC addresses explored, we now want to switch our focus to yet another capstone of our study which is the content and the response to our survey itself. In the upcoming section we present our custom content management system.

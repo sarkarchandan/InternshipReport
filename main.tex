@@ -1,0 +1,55 @@
+ %===============================================================================
+% Zweck:    KTR-Seminar-Vorlage
+% Erstellt: 16.10.2007
+% Autor:    U.K. / M.G.
+%===============================================================================
+%===============================================================================
+% Zum Kompilieren pdflatex und bibtex ausführen
+%===============================================================================
+\RequirePackage{ifpdf} \ifpdf
+\documentclass[pdftex, a4paper, 12pt, english]{article}
+\else
+\documentclass[a4paper, 12pt, english]{article}
+\fi
+%===============================================================================
+% central layout instructions and commands
+%===============================================================================
+%
+\input{config/layout}
+%===============================================================================
+% LATEX document
+%===============================================================================
+%
+
+\begin{document}
+	
+
+%
+% Create title page
+%
+\maketitle
+%
+% Creation of the tables of content and other tables
+%
+
+\newpage
+\pagenumbering{arabic}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%\newpage
+%\abkuerzungen
+%===============================================================================
+% LATEX document: load chapter
+%===============================================================================
+%
+\newpage
+%
+% insert here the chapters with command \input{chapter-file} 
+%
+\input{introduction/introduction}
+\input{references/references}
+
+\end{document}

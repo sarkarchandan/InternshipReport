@@ -1,0 +1,54 @@
+\subsection{Custom Content Management}
+\textbf{What is the Content Management System in our context?}
+\par Content Management system is use to manage the content of the pages . This help to update the content of the page through the administration panel . In this way with the help of content management system it provides a easy user interface to easily edit and update the content.
+\par In this project the CMS is used to update the questions of the questionnaire . To create the CMS, php language is use as a back end programming language.  Codeignitor\cite{CodeIgniter} framework is used to manage the code easily with the concept of Model View Controller , Mysql is use as the database where as javascript and Jquery is used as a front end programming language and pages are made using html/css.
+\par Below are the different modules of our Content Management System:
+\begin{itemize}
+	\item \textbf{Admin Authentication}
+	\par As the pages has the ability to update the content , as fact of that all the pages of the Content Management System are secure and can only be access by the authentic admin login . The Admin authentication is done by providing the credentials like email and password to the login page and admin can only access the Content Management System easily.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{./images/admin_auth}
+		\caption{Admin Authentication}
+		\label{figure1:cms_admin_authentication}
+	\end{figure}
+	\item \textbf{Update Question}
+	\par Once the Admin is logged in . The Admin has the ability to update the questions . There are 2 different pages for the questions to be updated one is for updating the questions in German and other for the English . As the project also aim to do analysis so all the questions has 2 options only.. The questions were made in a way that user easily fill up the answer with the options of Yes or No . Thats why the value of the options are 1 or 0 which store in the database.
+	\par Once the questions are updated in the server it will show the updated questionnaire to the user in the real time.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{./images/update_question_en}
+		\includegraphics[scale = 0.4]{./images/update_question_de}
+		\caption{Questions Can Be Updated}
+		\label{figure1:cms_update_questions}
+	\end{figure}
+	\item \textbf{Statistics}
+	\par Basic statistics is also done in the project . It will show the percentage of Yes answer in the dashboard of the admin. This way admin get instant statistics of the questionnaire . The statistics are shown using bar graph.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = \linewidth]{./images/graph}
+		\caption{Survey Response Statistics}
+		\label{figure1:cms_survey_response_stats}
+	\end{figure}
+	\par The graph is made using the library called Plotly\cite{Plotly} . The data is fetched on the page load and showed in the graph .
+	\item \textbf{Questionnaire}
+	\par The questionnaire has the ability to show how the questions are visible to the user , so once the questions are updated admin can also able to see how the questions will be look like to the user . In this way admin can also do the cross checking of the questionnaire . 
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.3]{./images/questionen}
+	\includegraphics[scale = 0.3]{./images/questionde}
+	\caption{Questionnaire Preview}
+	\label{figure1:cms_questionnaire_preview}
+	\end{figure}
+	\item \textbf{Database}
+	\par Mysql database is used to store the database . The database is made in a way that it can be extended easily . Total 8 tables are created with the approach of extensibility and extraction of more data . The table names are below 
+		\subitem{-} Admin
+		\subitem{-} Answers
+		\subitem{-} Campaign
+		\subitem{-} Questions
+		\subitem{-} Question-lang
+		\subitem{-} Question-lang-option
+		\subitem{-} Questions-option
+		\subitem{-} Users
+	\par Every table has its particular dataset . Most the tables has date and time stamp fields too and the password is encrypted using md5 for the security of data . Where as few more tables are in the dataset which can be use if in future campaigns are added too in the project.
+\end{itemize}

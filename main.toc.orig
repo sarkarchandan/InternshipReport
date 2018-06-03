@@ -1,0 +1,54 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Terms and Concepts}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Goal Definition}{4}{subsection.1.3}
+\contentsline {section}{\numberline {2}Related Works}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Real-world Applications}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Related Scientific Articles}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Caveat}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}Background}{7}{section.3}
+\contentsline {section}{\numberline {4}Approach}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Survey Questionnaire Preparation}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Beacon Configuration Deployment}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Unique Detections Form Beacons}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Possibilities With MAC Address}{16}{subsection.4.4}
+<<<<<<< HEAD
+\contentsline {subsection}{\numberline {4.5}Custom Content Management}{18}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Student Mobility Simulation }{18}{subsection.4.6}
+\contentsline {paragraph}{Data Collection}{19}{section*.4}
+\contentsline {section}{\numberline {5}Evaluation}{21}{section.5}
+\contentsline {subsection}{\numberline {5.1}Simulation Results}{21}{subsection.5.1}
+\contentsline {paragraph}{Current Scenario}{21}{section*.5}
+\contentsline {paragraph}{Future Average Case Scenario}{22}{section*.6}
+\contentsline {paragraph}{Future Best Case Scenario}{22}{section*.7}
+\contentsline {section}{\numberline {6}Summary}{22}{section.6}
+\contentsline {section}{\numberline {7}Future Work}{23}{section.7}
+\contentsline {section}{\numberline {8}References}{23}{section.8}
+\contentsline {section}{\numberline {9}Appendix}{23}{section.9}
+\contentsline {subsection}{\numberline {9.1}Individual Project Report for Alexandra Kapp}{23}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Individual Project Report for Alexander Albert}{23}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Individual Project Report for Chandan Sarkar}{23}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Individual Project Report for Usama Ahmed}{23}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}Individual Project Report for Shubhang Sharma}{23}{subsection.9.5}
+\contentsline {subsection}{\numberline {9.6}Individual Project Report for Mansoor Muzaffar Hussain}{23}{subsection.9.6}
+=======
+\contentsline {subsection}{\numberline {4.5}Custom Content Management}{16}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Student Mobility Simulation }{16}{subsection.4.6}
+\contentsline {paragraph}{Data Collection}{17}{section*.4}
+\contentsline {section}{\numberline {5}Evaluation}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Simulation Results}{19}{subsection.5.1}
+\contentsline {paragraph}{Current Scenario}{19}{section*.5}
+\contentsline {paragraph}{Future Average Case Scenario}{20}{section*.6}
+\contentsline {paragraph}{Future Best Case Scenario}{20}{section*.7}
+\contentsline {section}{\numberline {6}Summary}{21}{section.6}
+\contentsline {section}{\numberline {7}Future Work}{21}{section.7}
+\contentsline {section}{\numberline {8}References}{21}{section.8}
+\contentsline {section}{\numberline {9}Appendix}{22}{section.9}
+\contentsline {subsection}{\numberline {9.1}Individual Project Report for Alexandra Kapp}{22}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Individual Project Report for Alexander Albert}{22}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Individual Project Report for Chandan Sarkar}{24}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Individual Project Report for Usama Ahmed}{24}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}Individual Project Report for Shubhang Sharma}{24}{subsection.9.5}
+\contentsline {subsection}{\numberline {9.6}Individual Project Report for Mansoor Muzaffar Hussain}{24}{subsection.9.6}
+>>>>>>> a63dcecdf8cb9cb7441e1d5d9169387018f37b7a
