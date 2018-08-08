@@ -1,28 +1,38 @@
 \subsection{Key Concepts and Activities}
-This subsection will describe the key concepts developed during the internship and the activities performed.
-
-\begin{itemize}
-	\item Object Oriented Design Patterns
-	\item Delegate Pattern
-	\item iBeacon Standard and Ranging/Positioning
-	\item Object Oriented Programming with Swift, Objective C
-	\item Cross platform research with C++ 
-	\item Test Driven Development
-\end{itemize}
+In this section I illustrate the subject  matters that formed the core of my internship and the concepts I have dealt with.
 
 \subsubsection{Object Oriented Programming and Design Patterns}
 M. D. Smith et al. \cite{smith2011object} have described the object oriented design paradigm as the specification of task to be performed in terms of the associated objects and properties/behaviors of the objects. They have further illustrated an object as an instantiated entity having some operations it is capable to respond. It has state which could be impacted by the associated operations. Objects can invoke operations of other objects by passing messages. Smith et al. \cite{smith2011object} has also described a class as an interface specifying the properties and behaviors of an object. Properties defined inside the class determines the state of the object when instantiated. OOP paradigm provides abstraction and encapsulation contributing to security and modularity the real power of re-usability comes in the form of inheritance. OOP has contributed in developing maintainable code for many large and sophisticated software applications. 
-\par Despite the capabilities that OOP has offered, modern software development can not be realized without adherence appropriate architecture and design paradigm which needs us to adhere to certain disciplines while writing software application code. Erich Gamma et al. \cite{gamma1995design}  have mentioned that design patterns are the mechanism to identify, name and abstract away common themes in object oriented designs. They are generally based on the intent behind the design and they identify the collaboration, rolls and responsibilities of different objects in building a software application or solution. A very common frequently used example in mobile applications demographic is Model View Controller(MVC) design pattern which is often referred from the development of  Smalltalk-80 programming environment as illustrated in the work of Krasner et al. \cite{krasner1988description}. The key focus of the MVC design patterns is to separate the functional units of an application for modularity and easier maintenance. It separates the class instances encapsulating data and operations related to the application domain as \texttt{Model}, the presentation and display of the application state as \texttt{View} and user interaction and response with the model and the view as \texttt{Controller}. MVC is one of the popular design patterns used in developing standalone mobile applications. While there are many popular design patterns, in my internship I have worked with three popular object oriented design patterns as briefly illustrated in the table \ref{table:oop_design_patterns} below:
+\par Despite the capabilities that OOP has offered, modern software development can not be realized without adherence of appropriate architecture and design paradigm which needs us to adhere to certain disciplines while writing software application code. Erich Gamma et al.(The Gang of Four) \cite{gamma1995design}  have mentioned that design patterns are the mechanism to identify, name and abstract away common themes in object oriented designs. They are generally based on the intent behind the design and they identify the collaboration, rolls and responsibilities of different objects in building a software application or solution. A very common frequently used example in mobile applications demographic is Model View Controller(MVC) design pattern which is often referred from the development of  Smalltalk-80 programming environment as illustrated in the work of Krasner et al. \cite{krasner1988description}. The key focus of the MVC design patterns is to separate the functional units of an application for modularity and easier maintenance. It separates the class instances encapsulating data and operations related to the application domain as \texttt{Model}, the presentation and display of the application state as \texttt{View} and user interaction and response with the model and the view as \texttt{Controller}. MVC is one of the popular design patterns often realized while developing standalone mobile applications. While there are many popular design patterns, in my internship I have worked with three popular object oriented design patterns as briefly illustrated below.
+\begin{itemize}
+	\item \textbf{Mediator}
+	\par The Gang of Four \cite{gamma1995design} describes the Mediator design pattern with an object that encapsulates the cooperation and interactions between several other objects by preventing them refer to each other explicitly. Object orientation suggests to reasonably distribute the application behavior among several objects. But since often one object needs to interact with other objects in the object oriented design it may result in many interconnection among the objects. While this distribution of responsibilities makes the system modular but uncontrolled interconnection and interdependencies makes the system appears as monolithic.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{images/mediator}
+		\caption{Generic Mediator diagram as explained by The Gang of Four  \cite{gamma1995design}}
+		\label{figure:design_pattern_mediator}
+	\end{figure}
+	\par We can assign such collective behavior to a mediator object and let it coordinate among a group of objects and serve as an intermediary. The individual objects only know the mediator, resulting in reduced interconnection. In the diagram \ref{figure:design_pattern_mediator} we have  \texttt{aConcreteMediator} type acting as an intermediary among the several objects often referred as \texttt{aColleague} as per The Gang of Four \cite{gamma1995design}. Favendo Commander framework has several individually shippable modules responsible for various tasks aiding location based services. We have used Mediator design pattern to coordinate among these modules in the next release of the framework in order to create an complete service provided by the framework.
+	\item \textbf{Strategy}
+	\par The Gang of Four \cite{gamma1995design} defines the Strategy design pattern as the capability of encapsulating  a family of algorithms and making them interchangeable. In essence for different clients that are going to use the algorithm we can easily swap one strategy for other as per the clients needs and the underlying algorithm would also differ accordingly.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{images/strategy}
+		\caption{Generic Strategy diagram as explained by The Gang of Four  \cite{gamma1995design}}
+		\label{figure:design_pattern_strategy}
+	\end{figure}
+	\par Strategy often also called Policy design pattern, is applicable when several related objects having commonalities, only differs in certain behavior at runtime. In the basic structure \ref{figure:design_pattern_strategy} provided by The Gang of Four \cite{gamma1995design} we see that \texttt{Context} refers to the object that exposes a common interface which has a reference to a \texttt{Strategy} which could be an abstract base type or a protocol in certain languages. And we have several child types e.g. \texttt{ConcreteStrategyA} \texttt{B} and so on which derive from base type \texttt{Strategy}. From the perspective of \texttt{Context} it only has a strategy to carryout some task. Depending on the requirement, we can swap one child type for other in order to provide different outcomes for different strategies. Often in our framework in concern, we needed to record the specifications received from beacons hidden in a given zone in order to measure the outcome from our positioning algorithms. We could use different serialization strategies for these recording and we have found using strategy design pattern in this regard makes the implementation cleaner.
+	\item \textbf{Delegate}
+	\par Delegation as the Swift documentation \cite{swiftdelegation} illustrates, is a design pattern that features an object to hand over certain responsibilities to another object. So the later becomes so called delegate of the former. Wikipedia reference \cite{wikidelegation} on delegation describes it in a more general sense such that delegation is defined by the evaluation of some properties by one object(delegate) in the context of another (sender). Delegation is a useful design pattern in OOP and its implementation can be observed throughout the software ecosystems designed by Apple e.g iOS, watchOS, tvOS, macOS and even its predecessor NextStep as mentioned in \cite{wikidelegation}.
+	\par Delegation is relatively simple design pattern and often contributes a great deal to achieve a clean code in software applications. Particularly in Apple software ecosystems, specifically in the languages like Objective-C and Swift, delegate pattern is implemented using a language construct called \texttt{protocol} \cite{wikidelegation} which is analogous to interfaces in other languages like Java. In our framework we have made use of delegate pattern extensively in order to achieve a cleaner object to object interactions as it is prescribed by Apple.
+\end{itemize}
 
-\begin{longtable}{|| c | p{.70\textwidth} |} 
-	\hline
-	\textbf{Design Patterns} & \textbf{Specification} \\ \hline
-	\textbf{Mediator} & 
-	Mediator Description\\ \hline
-	\textbf{Strategy} &
-	Strategy Description\\ \hline
-	\textbf{Delegate} & 
-	Delegate Description\\ \hline
-	\caption{Object Oriented Design Patterns dealt with}
-	\label{table:oop_design_patterns}
-\end{longtable}
+\subsubsection{Test Driven Development}
+TDD 
+
+\subsubsection{Beacon Ranging and Overview of Indoor Positioning}
+Beacon Ranging and Positioning.
+
+\subsubsection{Cross-platform Framework Development}
+Cross platform framework development
