@@ -1,5 +1,5 @@
 \subsection{Key Concepts and Activities}
-In this section I illustrate the subject  matters that formed the core of my internship and the concepts I have dealt with.
+In this section I would like to illustrate the subject  matters that formed the core of my internship and the concepts I have dealt with.
 
 \subsubsection{Object Oriented Programming and Design Patterns}
 M. D. Smith et al. \cite{smith2011object} have described the object oriented design paradigm as the specification of task to be performed in terms of the associated objects and properties/behaviors of the objects. They have further illustrated an object as an instantiated entity having some operations it is capable to respond. It has state which could be impacted by the associated operations. Objects can invoke operations of other objects by passing messages. Smith et al. \cite{smith2011object} has also described a class as an interface specifying the properties and behaviors of an object. Properties defined inside the class determines the state of the object when instantiated. OOP paradigm provides abstraction and encapsulation contributing to security and modularity the real power of re-usability comes in the form of inheritance. OOP has contributed in developing maintainable code for many large and sophisticated software applications. 
@@ -9,7 +9,7 @@ M. D. Smith et al. \cite{smith2011object} have described the object oriented des
 	\par The Gang of Four \cite{gamma1995design} describes the Mediator design pattern with an object that encapsulates the cooperation and interactions between several other objects by preventing them refer to each other explicitly. Object orientation suggests to reasonably distribute the application behavior among several objects. But since often one object needs to interact with other objects in the object oriented design it may result in many interconnection among the objects. While this distribution of responsibilities makes the system modular but uncontrolled interconnection and interdependencies makes the system appears as monolithic.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale = 0.4]{images/mediator}
+		\includegraphics[scale = 0.5]{images/mediator}
 		\caption{Generic Mediator diagram as explained by The Gang of Four  \cite{gamma1995design}}
 		\label{figure:design_pattern_mediator}
 	\end{figure}
@@ -18,7 +18,7 @@ M. D. Smith et al. \cite{smith2011object} have described the object oriented des
 	\par The Gang of Four \cite{gamma1995design} defines the Strategy design pattern as the capability of encapsulating  a family of algorithms and making them interchangeable. In essence for different clients that are going to use the algorithm we can easily swap one strategy for other as per the clients needs and the underlying algorithm would also differ accordingly.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale = 0.4]{images/strategy}
+		\includegraphics[scale = 0.5]{images/strategy}
 		\caption{Generic Strategy diagram as explained by The Gang of Four  \cite{gamma1995design}}
 		\label{figure:design_pattern_strategy}
 	\end{figure}
@@ -29,10 +29,20 @@ M. D. Smith et al. \cite{smith2011object} have described the object oriented des
 \end{itemize}
 
 \subsubsection{Test Driven Development}
-TDD 
+Wikipedia \cite{wikitdd} defines TDD as the software development paradigm based on repeating shorter development cycles. The required outcome of a standalone program/application or a framework is broken into specific test cases first and then the code implementation is written to pass the tests. TDD inspires more confidence on the developed implementation and mitigates the chances of having bugs in the code.
+\par Janzen et al. \cite{janzen2005test} have illustrated the idea of Test Driven Development into three inherent aspects.
+\begin{itemize}
+	\item \textbf{The Test Aspect}
+	\par Janzen et al. \cite{janzen2005test} explains that the essence of TDD is to write automated tests in order to check the valid outcome often called acceptance criteria for units of a program. It is arguable in software development, what constitutes a unit of a program. Normally developers consider a method or function at the very least, as a testable unit. These unit tests could be manual process performed by the developers or could be part of continuous integration testing dealt with dedicated servers. Traditionally we are familiar with writing unit tests after so called unit or functions are coded. In the TDD discipline developers are supposed to write tests prior to write the code for implementation of the units which enables the unit tests to be executable write after they are written.
+	\item \textbf{The Driven Aspect}
+	\par The driven aspect is often interpreted as the practice of writing tests prior to the implementation. However Janzen et al. \cite{janzen2005test}  explains that \texttt{driven} in TDD focuses on how tests lead the analysis, design and programming decisions for the entire application or framework. Refactoring plays a key role in this driving process. Refactoring deals with making the code cleaner and simpler without affecting the outcome of the code and tests should still pass. It is often difficult practice to adhere to realize that TDD is more about design and analysis of the entire code and not about having bunch of tests passed. Often while designing APIs this test driven aspect plays a big role in defining the interface that we want to make publicly available.
+	\item \textbf{The Development Aspect}
+	\par Janzen et al. \cite{janzen2005test} further explains the TDD is not a software development methodology. It is practice that could be integrated with other essential practice in certain order and frequency. TDD can be realized as a micro-process in the chain/system or other software development processes. Adherence of TDD creates a set of automated test models which should be considered useless when the design decision for the software is made. Instead they should be considered a crucial component of the development process, capable ot providing quick feedback for any changes made in the code and their implications. If at any point an automated test fails, software developers get the feedback that there implementations that doesn't meet the acceptance criteria and should be considered fixing or altering.
+\end{itemize}
+Test Driven Development paradigm fits well in the context of iterative, incremental and evolutionary software development models. In my ongoing internship I have tried to study and apply the TDD practices in developing internal sub-frameworks aiding the capabilities of Favendo Commander master framework.
 
 \subsubsection{Beacon Ranging and Overview of Indoor Positioning}
-Beacon Ranging and Positioning.
-
-\subsubsection{Cross-platform Framework Development}
-Cross platform framework development
+In accordance with the activities and concepts I have dealt with in my internship, I would illustrate this sub section the concepts of beacon ranging and positioning in terms of iBeacon specification and location aware frameworks designed by Apple. Apple introduced the iBeacon specification  with the launch of iOS 7. As per the apple official iBeacon reference \cite{appleibeacon} iBeacon technology utilizes the Bluetooth Low Energy in order to create a beacon region around an object embedded with or implemented as iBeacon technology. An iOS device can receive feedback upon entering or exiting an iBeacon region along with the estimated proximity to the beacon in terms of varying signal strength(RSSI)  values. We need to consider the both hardware and software components in order to create an iBeacon-based solution.
+\par Manufacturers interested in creating iBeacon technology based hardware e.g. beacons need to obtain official license from Apple. Application developers interested in implementing location awareness in iOS application needs to make use of apple designed CoreLocation \cite{applecorelocation} framework while programming.
+\par One of the key services offered by Favendo is indoor positioning which is implemented for iOS ecosystem based in iBeacon technology which specifies that each beacon will advertise a 16 bytes unique identifier \texttt{UUID} for the region and 2 bytes numeric \texttt{major} and \texttt{minor}  values in order subdivide a given physical location in different regions to aid the positioning. Besides in order to provide an estimated proximity from a beacon the CoreLocation framework defines some enumeration values which in turn encapsulates a range of RSSI values underneath. Only challenge the method poses is that iOS devices get feed of fluctuating signal strength coming from the iBeacon in every second and we need smoothing algorithm in order to filter out some RSSI values and consider the ones which could give us with a considerable approximation of the position of the device in given indoor location. One of the efficient ways to achieve this is to use Kalman filtering algorithm also known as Linear Quadratic Estimation as per Wikipedia reference \cite{wikikalmanfilter}. 
+\par Kalman filtering algorithm relies on a series of measurements observed over time having some sort of inaccuracies and it derives estimates overtime which are better and more accurate than the estimates based on single measurements alone. Grewal et al. \cite{grewal2011kalman} have regarded Kalman filtering algorithm as a greater discovery in the filed of statistical estimation. In my internship I have designed framework which can range iBeacons and records them in serialized formats. These recording include a patterns of the signal strength values received from one of several beacons in certain location overtime as we navigate through a given location. We feed these recording to our positioning algorithms to test the outcome which gives us a measure of accuracy of the algorithms and helps us to fix the anomalies and optimize for better estimation.
