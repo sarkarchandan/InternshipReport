@@ -27,6 +27,32 @@ M. D. Smith et al. \cite{smith2011object} have described the object oriented des
 	\par Delegation as the Swift documentation \cite{swiftdelegation} illustrates, is a design pattern that features an object to hand over certain responsibilities to another object. So the later becomes so called delegate of the former. Wikipedia reference \cite{wikidelegation} on delegation describes it in a more general sense such that delegation is defined by the evaluation of some properties by one object(delegate) in the context of another (sender). Delegation is a useful design pattern in OOP and its implementation can be observed throughout the software ecosystems designed by Apple e.g iOS, watchOS, tvOS, macOS and even its predecessor NextStep as mentioned in \cite{wikidelegation}.
 	\par Delegation is relatively simple design pattern and often contributes a great deal to achieve a clean code in software applications. Particularly in Apple software ecosystems, specifically in the languages like Objective-C and Swift, delegate pattern is implemented using a language construct called \texttt{protocol} \cite{wikidelegation} which is analogous to interfaces in other languages like Java. In our framework we have made use of delegate pattern extensively in order to achieve a cleaner object to object interactions as it is prescribed by Apple.
 \end{itemize}
+Below \ref{table:design_patterns} is a summary of the design patterns that I have implemented in my work during my internship.
+
+\begin{longtable}{|| c | p{.70\textwidth} |} 
+	\hline
+	\textbf{Design Pattern} & \textbf{Specification} \\ \hline
+	\textbf{Mediator} & 
+	\begin{itemize}
+		\item Defines an object that determines how several other objects should interact and inter-operate.
+		\item Enables loose coupling in complex objects orchestration.
+	\end{itemize}
+	\\ \hline
+	\textbf{Strategy} &
+	\begin{itemize}
+		\item Defines a set of interchangeable algorithms with commonalities.
+		\item Decouples the use of algorithms from their users.
+	\end{itemize}
+	\\ \hline
+	\textbf{Delegate} & 
+	\begin{itemize}
+		\item Enables combination of simple objects into complex object system and code reuse.
+		\item Promotes cleaner code.
+	\end{itemize}
+	\\ \hline
+	\caption{Summary of design patterns dealt with \cite{gamma1995design}}
+	\label{table:design_patterns}
+\end{longtable}
 
 \subsubsection{Test Driven Development}
 Wikipedia \cite{wikitdd} defines TDD as the software development paradigm based on repeating shorter development cycles. The required outcome of a standalone program/application or a framework is broken into specific test cases first and then the code implementation is written to pass the tests. TDD inspires more confidence on the developed implementation and mitigates the chances of having bugs in the code.
